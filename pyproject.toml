@@ -3,5 +3,27 @@ name = "data-science"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = []
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "beir>=2.2.0",
+    "faiss-cpu>=1.13.2",
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "gensim>=4.4.0",
+    "nltk>=3.9.4",
+    "streamlit>=1.56.0",
+    "pybind11>=3.0.3",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+torchvision = { index = "pytorch-cu121" }
+torchaudio = { index = "pytorch-cu121" }
