@@ -1,0 +1,18 @@
+Load MS MARCO → Extract passages + queries
+→ Generate embeddings (BERT / Word2Vec)
+→ Build FAISS index
+→ Query search
+→ Evaluate (Precision@k, Recall@k using qrels)
+→ Compare models
+→ Demo'
+
+
+
+
+
+
+
+python main.py --subset-size 50000 --eval-queries 200 --k-values 5,10,20 --top-k 10 --alpha 0.5
+
+streamlit run streamlit_app.py
+

@@ -1,0 +1,9 @@
+datasets
+sentence-transformers
+faiss-cpu
+rank-bm25
+scikit-learn
+numpy
+torch
+streamlit
+pandas
